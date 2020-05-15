@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/d2e31af88b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/darkly.css" />
+  <title>TaskMaster</title>
+</head>
+
+<body>
+  <header class="container-fluid text-center bg-primary py-3 shadow">
+    <div class="row">
+      <div class="col">
+        <h1>Don't Forget...</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid">
+    <div class="row text-center  my-3">
+      <div class="col justify-content-center">
+        <form onsubmit="app.listController.addList(event)">
+          <input type="text" id="title" class="form-group" required placeholder="List Name...">
+          <input class="rounded" type="color" id="listColor" name="listColor" value="#000000">
+          <label for="listColor">List Color</label>
+          <button type="submit" class="btn btn-primary ml-1">Create List</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="lists" class="row justify-content-center">
+    </div>
+
+
+
+
+  </main>
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>

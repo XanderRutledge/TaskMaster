@@ -1,0 +1,16 @@
+  
+body {
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    text-shadow:2px 2px black;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.button {
+    cursor: pointer;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
